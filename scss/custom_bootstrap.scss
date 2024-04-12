@@ -1,0 +1,8 @@
+$theme-colors: (
+    "primary": #b57edc,
+    "secondary":#ff69b4,
+    "primary-emphasis":#000030
+    );
+
+// Import bootstrap and write custom changes to that here!
+@import "../bootstrap/scss/bootstrap";

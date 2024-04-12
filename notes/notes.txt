@@ -1,0 +1,76 @@
+---------------------------ArboraDome Project Notes---------------------------
+
+/* Setting up Bootstrap */
+    Step 1: Download Source Code Files of Bootstrap from getbootstrap.com and add extract them in your project folder
+
+    Step 2: Inside your Project Folder,make the following folders and files
+        --->css
+            -> main.css (this will come from PrePros after compilation of .scss file)
+        --->scss
+            -> custom_bootstrap.scss (@import bootsrap and override default colors)
+            -> custom.scss (write custom scss here, just the way you do in a styles.css file)
+            -> main.scss (@import the other 2 files together in the same order as written above)
+        ---> index.html   
+
+    Step 3: Use PrePros to compile the main.scss file and you're all set! (Test by changing the background color in custom.scss file)
+
+
+/* Changing Boostrap colors with Custom colors*/
+
+    $theme-colors: (
+    "primary": #b57edc,
+    "secondary":#ff69b4,
+    "primary-emphasis":#000030
+    );
+
+
+/* Adding JS link to HTML file*/
+
+    When you Download the Bootstrap Source Code files to add your project, you can add JS to your file as below:
+
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+/* Using FontAwesome Icons */
+    Step 1: Go to "https://cdnjs.com/libraries/font-awesome" and add the Font Awesome CDN link to your HTML file.
+
+    Step 2: Find your desired icon on font awesome and copy its code and add it anywhere in your code.
+
+
+/* Adding Icon to the Title*/
+    Step 1: Go to "https://icons8.com/icons/set/favicon" and find your desired icon.
+
+    Step 2: Download the .png file and using an online convertor, convert your image to .ico format.
+
+    Step 3: Add your icon to your HTML file as below:
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+
+/* Making working Forms */
+
+    Go to "https://web3forms.com/" to generate an API key and to incorporate the required code into your form.
+
+
+/* Navbar */
+    -> 'navbar-dark' makes the navbar text white!
+
+    -> To make the background image go all the way upto and under the navbar, add the following code to your navbar
+    .navbar{
+        position:absolute;
+        top:0;
+        right:0;
+        left:0;
+    }
+
+        ->Drawbacks of doing this:
+            1. You can make the Navbar stick to the top. 'sticky-top' does not work!
+
+
+            2. Now this craetes aproblem for me. The text written on the showcase goes all the way up and is no longer vertically aligned in the center of the showcase. Therefore, I add padding to the showcase as below:
+                padding-top:250px;
+
+
+--------------------------------------------------------------------------------------------------------------
+
+/* Things I faced difficulty with */
+

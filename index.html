@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrestCamps</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <!-- Raleway Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Questrial Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+  <!-- Bootstrap Link -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <!-- Navbar Section-->
+  <nav class="navbar navbar-expand-md sticky-top py-1 navbar-dark">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#">
+        <h3 class="mb-0">CrestCamps</h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#myCards">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#join">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-primary ms-2 d-none d-md-inline" data-bs-toggle="modal" data-bs-target="#bookingModal">BOOK NOW</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Showcase Section-->
+  <section id="showcase">
+    <div class="overlay">
+      <div class="container text-center text-white">
+        <h3 class="mb-0 display-5">Mountain Magic Retreat</h3>
+        <h1 id="header" class="display-1 text-primary-emphasis pb-2">CrestCamps</h1>
+        <p class="lead d-none d-md-block">Experience mountain magic at CrestCamps: Where nature meets comfort.</p>
+        <button class="btn btn-secondary rounded-pill px-4 ms-2 d-md-none" data-bs-toggle="modal" data-bs-target="#bookingModal">BOOK NOW</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Section-->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">New Booking</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <p>Please fill out the form below and we'll get back to you as soon as possible.</p>
+         <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="adults" class="form-label">Number of Adults</label>
+          <input type="number" class="form-control" id="adults" min="0">
+        </div>
+        <div class="mb-3">
+          <label for="children" class="form-label">Number of Children</label>
+          <input type="number" class="form-control" id="children" min="0">
+        </div>
+        <div class="mb-3">
+          <label for="requests" class="form-label">Additional Requests</label>
+          <textarea class="form-control" id="requests" rows="3"></textarea>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button id="close" type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Icons and Ameneties Section -->
+  <section id="about">
+    <div class="container text-center mt-5 ">
+      <h3>Where Wilderness Adventures Meet Comfortable Accommodations</h3>
+
+      <div class="row">
+        <div class="col-md-4">
+          <img class="icon fluid d-none d-md-inline" src="images/icons/tent2.png" alt="">
+          <h3 class="text-secondary">Luxury Tents</h3>
+          <p class="lead">Experience camping like never before in our luxurious tents. Each tent is equipped with
+            premium bedding, cozy furnishings, and thoughtful touches to ensure a comfortable stay amidst the
+            wilderness.</p>
+        </div>
+        <div class="col-md-4">
+          <img class="icon fluid d-none d-md-inline" src="images/icons/campfire2.png" alt="">
+          <h3 class="text-secondary">S'mores Station</h3>
+          <p class="lead">Get your sweet tooth ready for our S'mores Station! Toast marshmallows to perfection and
+            sandwich them between graham crackers and chocolate for a gooey, delicious treat.</p>
+        </div>
+        <div class="col-md-4">
+          <img class="icon fluid d-none d-md-inline" src="images/icons/nature2.png" alt="">
+          <h3 class="text-secondary">Guided Nature Walks</h3>
+          <p class="lead">Embark on guided nature walks led by our knowledgeable staff and explore the wonders of the
+            wilderness. Learn about local flora and fauna and discover hidden gems off the beaten path. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Cards Section -->
+  <section id="myCards" class="mt-5">
+    <div class="container text-center">
+      <h3>Immerse yourself in a camping getaway that's all set up and hassle-free.</h3>
+      <div class="row justify-content-center">
+        <div class="col-md-6 py-3 d-flex justify-content-center">
+          <div class="card" style="width:30rem;">
+            <img src="images/Cards/card-2.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-secondary">DISCOVER WILDERNESS WONDERS</h5>
+              <p class="card-text">Embark on a journey through untamed landscapes, where every trail leads to a new
+                adventure.</p>
+              <!-- <a href="#" class="btn btn-secondary">Explore</a> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 py-3 d-flex justify-content-center">
+          <div class="card" style="width:30rem;">
+            <img src="images/Cards/card-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-secondary">ELEVATED CAMPING EXPERIENCE</h5>
+              <p class="card-text">Indulge in an elevated camping experience where luxury meets the great outdoors. Our
+                lavish tents provide the perfect blend of comfort, style, and adventure.</p>
+              <!-- <a href="#" class="btn btn-secondary">Explore</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="my-5">
+    <div class="container text-center">
+      <h3>What our happy campers are saying.</h3>
+      <div class="row">
+        <div class="col-lg-4">
+          <i class="fa-solid fa-quote-left fa-2xl mb-4 text-primary"></i>
+          <blockquote class="blockquote">
+            <p class="lead">Absolutely breathtaking! CrestCamps exceeded all expectations. The stunning mountain views,
+              cozy tents, and friendly staff made our camping trip unforgettable. Can't wait to return!</p>
+          </blockquote>
+          <footer class="blockquote-footer">
+            <cite title="Source Title">Satyam</cite>
+          </footer>
+        </div>
+
+        <div class="col-lg-4">
+          <i class="fa-solid fa-quote-left fa-2xl mb-4 text-primary"></i>
+          <blockquote class="blockquote">
+            <p class="lead">Paradise found! CrestCamps offers the ultimate camping experience. The luxurious tents,
+              delicious meals, and variety of outdoor adventures catered to all our needs. Already planning our next
+              visit!</p>
+          </blockquote>
+          <footer class="blockquote-footer">
+            <cite title="Source Title">Mitali Gupta</cite>
+          </footer>
+        </div>
+
+        <div class="col-lg-4">
+          <i class="fa-solid fa-quote-left fa-2xl mb-4 text-primary"></i>
+          <blockquote class="blockquote">
+            <p class="lead">A must-visit destination for nature lovers! CrestCamps' pristine location, eco-friendly
+              practices, and knowledgeable guides made our stay truly special. The starlit skies and serene ambiance
+              left us speechless. Can't wait to come back!</p>
+          </blockquote>
+          <footer class="blockquote-footer">
+            <cite title="Source Title">Shrinita </cite>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="mt-5">
+    <div class="container">
+      <h3 class="text-center">Instagram Adventure Gallery</h3>
+      <h5 class="text-primary text-center">#CRESTCAMPS</h5>
+      <!-- Row 1 -->
+      <div class="row mt-5">
+        <!-- Col 1 -->
+        <div class="col-12 col-sm-6 col-lg-3 pb-4">
+          <div class="card">
+            <img src="images/Gallery/gallery-1.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <div class="card-text">
+                <div class="row">
+                  <div class="col-1"><i class="fa-regular fa-heart"></i></div>
+                  <div class="col-1"><i class="fa-regular fa-comment"></i></div>
+                  <div class="col-1"><i class="fa-regular fa-paper-plane"></i></div>
+
+                  <div class="offset-7 col-1"><i class="fa-regular fa-bookmark"></i></div>
+                </div>
+
+                <p>270 likes</p>
+                <p class="mb-2" style="font-weight:400;"><span style="font-weight:700;">friendsandtents</span>
+                  &nbsp; The mountains are calling...</p>
+                <p class="text-primary my-0" style="font-size: 0.95rem;">#camping #mountainbliss #crestcamps #coffeetime
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Col 2 -->
+        <div class="col-12 col-sm-6 col-lg-3 pb-4">
+          <div class="card">
+            <img src="images/Gallery/gallery-2.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <div class="card-text">
+                <div class="row">
+                  <div class="col-1"><i class="fa-regular fa-heart"></i></div>
+                  <div class="col-1"><i class="fa-regular fa-comment"></i></div>
+                  <div class="col-1"><i class="fa-regular fa-paper-plane"></i></div>
+
+                  <div class="offset-7 col-1"><i class="fa-regular fa-bookmark"></i></div>
+                </div>
+
+                <p>1,192 likes</p>
+                <p class="mb-2" style="font-weight:400;"><span style="font-weight:700;">the_onedering_nomad</span>
+                  &nbsp; Real freedom lies in wilderness</p>
+                <p class="text-primary my-0" style="font-size: 0.95rem;">#camp #camplife #crestcamps #goals</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Col 3 -->
+        <div class="col-12 col-sm-6 col-lg-3 pb-4">
+          <div class="card">
+            <img src="images/Gallery/gallery-3.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <div class="card-text">
+                <div class="row">
+                  <div class="col-1"><i class="fa-regular fa-heart"></i></div>
+                  <div class="col-1"><i class="fa-regular fa-comment"></i></div>
+                  <div class="col-1"><i class="fa-regular fa-paper-plane"></i></div>
+
+                  <div class="offset-7 col-1"><i class="fa-regular fa-bookmark"></i></div>
+                </div>
+
+                <p>43 likes</p>
+                <p class="mb-2" style="font-weight:400;"><span style="font-weight:700;">camping.sphere</span>
+                  &nbsp; Woke up to this beautiful view</p>
+                <p class="text-primary my-0" style="font-size: 0.95rem;">#campingwithdogs #mountainbliss #campingseason
+                  #crestcamps</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Col 4 -->
+        <div class="col-12 col-sm-6 col-lg-3 pb-4">
+          <div class="card">
+            <img src="images/Gallery/gallery-4.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <div class="card-text">
+                <div class="row">
+                  <div class="col-1"><i class="fa-regular fa-heart"></i></div>
+                  <div class="col-1"><i class="fa-regular fa-comment"></i></div>
+                  <div class="col-1"><i class="fa-regular fa-paper-plane"></i></div>
+
+                  <div class="offset-7 col-1"><i class="fa-regular fa-bookmark"></i></div>
+                </div>
+
+                <p>279 likes</p>
+                <p class="mb-2" style="font-weight:400;"><span style="font-weight:700;">hikepixx</span>
+                  &nbsp; Cooking up some delicious food in the mountains!</p>
+                <p class="text-primary my-0" style="font-size: 0.95rem;">#wilderness #naturescape #crestcamps #mountaincooking</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- Row 1 End  -->
+
+      <!-- Row 2 -->
+      <div class="row mt-5 d-none d-sm-flex">
+        <!-- Col 1 -->
+        <div class="col-6 col-lg-3 pb-4">
+          <div class="card">
+            <img src="images/Gallery/gallery-5.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <div class="card-text">
+                <div class="row">
+                  <div class="col-1"><i class="fa-regular fa-heart"></i></div>
+                  <div class="col-1"><i class="fa-regular fa-comment"></i></div>
+                  <div class="col-1"><i class="fa-regular fa-paper-plane"></i></div>
+
+                  <div class="offset-7 col-1"><i class="fa-regular fa-bookmark"></i></div>
+                </div>
+
+                <p>45 likes</p>
+                <p class="mb-2" style="font-weight:400;"><span style="font-weight:700;">peace.wanderer</span>
+                  &nbsp; Our hardest hike yet...</p>
+                <p class="text-primary my-0" style="font-size: 0.95rem;">#travelwithme #fyp #mountains #crestcamps</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Col 2 -->
+        <div class="col-6 col-lg-3 pb-4">
+          <div class="card">
+            <img src="images/Gallery/gallery-6.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <div class="card-text">
+                <div class="row">
+                  <div class="col-1"><i class="fa-regular fa-heart"></i></div>
+                  <div class="col-1"><i class="fa-regular fa-comment"></i></div>
+                  <div class="col-1"><i class="fa-regular fa-paper-plane"></i></div>
+
+                  <div class="offset-7 col-1"><i class="fa-regular fa-bookmark"></i></div>
+                </div>
+
+                <p>458 likes</p>
+                <p class="mb-2" style="font-weight:400;"><span style="font-weight:700;">camping.hub</span>
+                  &nbsp; Follow us <span class="text-primary">@camping.hub</span> for more!</p>
+                <p class="text-primary my-0" style="font-size: 0.95rem;">#nature #outdoor #camping #tentview #crestcamps
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Col 3 -->
+        <div class="col-6 col-lg-3 pb-4">
+          <div class="card">
+            <img src="images/Gallery/gallery-7.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <div class="card-text">
+                <div class="row">
+                  <div class="col-1"><i class="fa-regular fa-heart"></i></div>
+                  <div class="col-1"><i class="fa-regular fa-comment"></i></div>
+                  <div class="col-1"><i class="fa-regular fa-paper-plane"></i></div>
+
+                  <div class="offset-7 col-1"><i class="fa-regular fa-bookmark"></i></div>
+                </div>
+
+                <p>289 likes</p>
+                <p class="mb-2" style="font-weight:400;"><span style="font-weight:700;">lukecamping</span>
+                  &nbsp; 'smores are good for the soul</p>
+                <p class="text-primary my-0" style="font-size: 0.95rem;">#outdoors #firepit #crestcamps #smore</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Col 4 -->
+        <div class="col-6 col-lg-3 pb-4">
+          <div class="card">
+            <img src="images/Gallery/gallery-8.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <div class="card-text">
+                <div class="row">
+                  <div class="col-1"><i class="fa-regular fa-heart"></i></div>
+                  <div class="col-1"><i class="fa-regular fa-comment"></i></div>
+                  <div class="col-1"><i class="fa-regular fa-paper-plane"></i></div>
+
+                  <div class="offset-7 col-1"><i class="fa-regular fa-bookmark"></i></div>
+                </div>
+
+                <p>589 likes</p>
+                <p class="mb-2" style="font-weight:400;"><span style="font-weight:700;">jaden_outside</span>
+                  &nbsp; Found a little perch at the top of the mountain</p>
+                <p class="text-primary my-0" style="font-size: 0.95rem;">#camping #mountainbliss #crestcamps</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- Row 2 End  -->
+
+    </div>
+  </section>
+
+  <!-- Quote From The Owner -->
+  <section class="mt-5">
+    <div class="container text-center">
+      <i class="fa-solid fa-quote-left fa-2xl mb-4 text-primary"></i>
+      <blockquote class="blockquote">
+        <p class="lead">Greetings from CrestCamps! As the proud owner, I'm delighted to welcome you to our slice of
+          paradise in the mountains. From cozy campfires to scenic hikes, every moment here is meant to be cherished.
+          Our team is dedicated to ensuring your stay is nothing short of extraordinary. Welcome to CrestCamps, where
+          adventure awaits and memories are made!</p>
+      </blockquote>
+      <footer class="blockquote-footer">
+        <cite title="Source Title">Owner, CrestCamps</cite>
+      </footer>
+    </div>
+  </section>
+
+  <!-- Join Form Section -->
+  <section id="join" class="mt-5">
+    <div class="container-fluid text-center py-5">
+      <h4 class="text-white pb-3">JOIN OUR NEWSLETTER FOR DEALS AND UPDATES AND OFFERS</h4>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="ab8155e5-07a7-409e-884b-04429464ed43">
+        <div class="input-group flex-nowrap ms-auto me-auto">
+          <input name="email" type="email" class="form-control" placeholder="Your Email" aria-label="Email"
+          aria-describedby="addon-wrapping">
+          <button type="submit" class="btn btn-secondary">Join Now</button>
+        </div>
+      </form>  
+    </div>
+  </section>
+
+  <!-- Navbar Bottom-->
+  <section id="navbarBottom">
+    <div class="container-fluid p-2 d-flex justify-content-center align-items-center">
+      <a class="btn btn-secondary b-0 mx-2" href="#myCards">EXPLORE</a>
+      <a class="btn btn-secondary b-0 mx-2" href="#">CONTACT</a>
+      <a class="btn btn-secondary b-0 mx-2" href="#bookingModal"  data-bs-toggle="modal" data-bs-target="#bookingModal">BOOK NOW</a>
+    </div>
+  </section>
+
+
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
